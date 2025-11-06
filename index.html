@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salon Bliss - Modern Salon Landing Page</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; background: #f8f8f8; color: #222; }
+    header { background: linear-gradient(90deg, #e0aaff 0%, #b8c0ff 100%); padding: 2rem 1rem; text-align: center; }
+    header h1 { font-size: 2.5rem; margin: 0 0 0.5rem; }
+    header p { font-size: 1.2rem; margin: 0; }
+    nav { display: flex; justify-content: center; gap: 2rem; margin: 1rem 0; }
+    nav a { color: #6c63ff; text-decoration: none; font-weight: 500; }
+    nav a:hover { text-decoration: underline; }
+    .container { max-width: 1100px; margin: 2rem auto; padding: 0 1rem; }
+    .section { margin-bottom: 3rem; }
+    .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+    .service-card { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 1.5rem; text-align: center; }
+    .pricing { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; }
+    .price-card { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 1.5rem; min-width: 220px; flex: 1; text-align: center; }
+    .price-card h3 { margin-top: 0; }
+    .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
+    .gallery img { width: 100%; border-radius: 8px; object-fit: cover; height: 140px; }
+    .team { display: flex; flex-wrap: wrap; gap: 1.5rem; justify-content: center; }
+    .team-member { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 1rem; min-width: 180px; text-align: center; }
+    .team-member img { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; margin-bottom: 0.5rem; }
+    form { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px #0001; padding: 2rem; max-width: 400px; margin: 0 auto; }
+    form label { display: block; margin-bottom: 0.5rem; font-weight: 500; }
+    form input, form select, form textarea { width: 100%; padding: 0.5rem; margin-bottom: 1rem; border-radius: 4px; border: 1px solid #ccc; }
+    form button { background: #6c63ff; color: #fff; border: none; padding: 0.75rem 2rem; border-radius: 4px; font-size: 1rem; cursor: pointer; }
+    form button:hover { background: #5548c8; }
+    .error { color: #d90429; font-size: 0.95rem; margin-bottom: 1rem; }
+    @media (max-width: 700px) {
+      .services, .gallery, .team, .pricing { grid-template-columns: 1fr; flex-direction: column; }
+      .container { padding: 0 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Salon Bliss</h1>
+    <p>Experience beauty and relaxation at our modern salon</p>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#team">Team</a>
+      <a href="#booking">Book Now</a>
+    </nav>
+  </header>
+  <main class="container">
+    <section id="services" class="section">
+      <h2>Our Services</h2>
+      <div class="services">
+        <div class="service-card">
+          <h3>Haircut & Styling</h3>
+          <p>Trendy cuts, blowouts, and styling for all hair types.</p>
+        </div>
+        <div class="service-card">
+          <h3>Coloring</h3>
+          <p>Highlights, balayage, and full color treatments.</p>
+        </div>
+        <div class="service-card">
+          <h3>Facials</h3>
+          <p>Rejuvenating facials for glowing, healthy skin.</p>
+        </div>
+        <div class="service-card">
+          <h3>Manicure & Pedicure</h3>
+          <p>Pampering nail care and art for hands and feet.</p>
+        </div>
+      </div>
+    </section>
+    <section id="pricing" class="section">
+      <h2>Pricing</h2>
+      <div class="pricing">
+        <div class="price-card">
+          <h3>Haircut</h3>
+          <p>₹500</p>
+        </div>
+        <div class="price-card">
+          <h3>Coloring</h3>
+          <p>₹1200</p>
+        </div>
+        <div class="price-card">
+          <h3>Facial</h3>
+          <p>₹800</p>
+        </div>
+        <div class="price-card">
+          <h3>Manicure & Pedicure</h3>
+          <p>₹700</p>
+        </div>
+      </div>
+    </section>
+    <section id="gallery" class="section">
+      <h2>Gallery</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Salon interior" />
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Hair styling" />
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Facial treatment" />
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=400&q=80" alt="Manicure" />
+      </div>
+    </section>
+    <section id="team" class="section">
+      <h2>Meet Our Team</h2>
+      <div class="team">
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Priya - Senior Stylist" />
+          <h3>Priya</h3>
+          <p>Senior Stylist</p>
+        </div>
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Rahul - Color Specialist" />
+          <h3>Rahul</h3>
+          <p>Color Specialist</p>
+        </div>
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Anita - Esthetician" />
+          <h3>Anita</h3>
+          <p>Esthetician</p>
+        </div>
+        <div class="team-member">
+          <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Vikram - Nail Artist" />
+          <h3>Vikram</h3>
+          <p>Nail Artist</p>
+        </div>
+      </div>
+    </section>
+    <section id="booking" class="section">
+      <h2>Book Your Appointment</h2>
+      <form id="bookingForm" novalidate>
+        <div class="error" id="formError" style="display:none;"></div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+        <label for="service">Service</label>
+        <select id="service" name="service" required>
+          <option value="">Select a service</option>
+          <option value="Haircut">Haircut</option>
+          <option value="Coloring">Coloring</option>
+          <option value="Facial">Facial</option>
+          <option value="Manicure & Pedicure">Manicure & Pedicure</option>
+        </select>
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required />
+        <label for="message">Additional Message</label>
+        <textarea id="message" name="message" rows="3"></textarea>
+        <button type="submit">Book Now</button>
+      </form>
+    </section>
+  </main>
+  <footer style="text-align:center; padding:1rem; background:#b8c0ff; color:#222;">
+    &copy; 2025 Salon Bliss. All rights reserved.
+  </footer>
+  <script>
+    document.getElementById('bookingForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      var error = '';
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var service = document.getElementById('service').value;
+      var date = document.getElementById('date').value;
+      if (!name) error += 'Name is required.<br>';
+      if (!email || !/^\S+@\S+\.\S+$/.test(email)) error += 'Valid email is required.<br>';
+      if (!service) error += 'Please select a service.<br>';
+      if (!date) error += 'Please select a date.<br>';
+      var errorDiv = document.getElementById('formError');
+      if (error) {
+        errorDiv.innerHTML = error;
+        errorDiv.style.display = 'block';
+      } else {
+        errorDiv.style.display = 'none';
+        alert('Thank you for booking! We will contact you soon.');
+        document.getElementById('bookingForm').reset();
+      }
+    });
+  </script>
+</body>
+</html>
